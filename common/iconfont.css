@@ -1,0 +1,37 @@
+@font-face {font-family: "iconfont";
+  src: url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAU8AAsAAAAACmwAAATwAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDXgqHLIYVATYCJAMcCxAABCAFhG0HbRv6CCMRdntQEpP9MyGbU1aXTD65Uu16wTLuLvJxk5E6Et/kP71b/rkzMRLwdQ8Vd5aaGLQe6mJh22ef8PxPPAGAFl4O2AoiA33Bba45YDthIsyjnEWPvpD0OX9pRn9/qJp5HrD57Ftcxly2J61BwVw4QAEaY9sC6RWwtQKW61YF2BmsRf6ngQCoyOJHLS8dA1AgwJhEAGhcPXIwlJQGQg2JoMilkpWCRusgQmEr2SsAa/3vp59QfQrAIHIYZ3Ud0WoYmsaK4vN4yAr9eAjh4UwAuHUAB+AHCAAtK7WEeOjz41CV3ykgAMAJBQxSrCi2+s7evbgen2dZ6VyjleA0swEOAQRxgH8eQBIoiZ0k9hJLB8m1EXAgthqBAMTOIiAgdg+BCMR1BAyIz5PiUPHyeCcAL1ARQDMJYk0Lg0CGi6DSYtlhRNjsbsUmk0znI9SfO+LEDeNaybD+H9uXuPl4LY3tN1tpfMdOTYtsT2Ha04p8rl09mbz1QFlAZdtOFaj84IPW6qN7uUw9coa4amxRK3ZOHnkyUjp8c2KisUkd+elTwBWNBk2zPJTq5TS2UEVFzyvRaNgTafkDPn0KRt4+DD94oz76lLPfnA13nck0B7RhMZz4zzTb+SSaJx6saOM6fBxSx4LkNI6Fjmt9r94N3zFuhW4HHAeirR99QjzBo5pLlPqlDL5yJ3w3cjt0K6Dd99jM7asaJ3bsTB55N9Jo+Obtu46pqrEJrHO3noUzr5w4QxTec+KKcenYLqAq0SX2kS/uXCAePtKYHi/Z6P1Y62Pe4o1vu44tfempV0dq3mXw4Xbq2NTFqWPVdocHJ58u1anneVUytuvbwpazZ2o/7RthE/c2Xdz0rGgbvu+fjJmziVPbwlpLNuZW9yze2LKwHdsDVtsJtG2NbUKBxfRmTyhazM+eYYuV43J7+bjCFid6LC6+177M37GnvxMZXqkV+vWjVibTndEqL3+93lJfn9+tbRtRsnujYdOWDVc0FC78/8tdgWJSaa+z2fDly4czkkmyHEHsRa2uenkLZVCk9u5W7l7uhXd5g0C57p1VMNNrHa9qtbPa2ua+J1DJgsqAJ5YdqJ2sQ/fOpDKzm+7gCeYTi+i3rdhz4O7CFyeGmFPMU0NerD13wFNi/9XeL2fOt0dzaiVN/E5K3J/0+7cT9Ym//J60P/H3Xycm1s45+trI6Y9md2IBAOtbCwXOQwDA67BvACv+KK20nqvnus9BsF2k9HZGfF99VZOBroa/Kdpf2PnV35FSWoBJ8KOTAub+OlVCxxrMfwKVb6hlQbaQ9b+fZ7NgDkiT0RWihwFQzSbgN+nw+m44aeJkHNemIDEGBhmZwKGgACsQ/SBCQ02QoKAJqNC1Wa/BZwo4SLABKLOUAILbWWBw4i5wuL3GCsRvQUSSX0CCexxUBMm3o4ai3VLvjoJG0YP9Q+14IEuvuyD5huHdGUnyffILJdZOKNI8G7zigDLEnPgJpSoBCfdwIc7DrmMYhRt0mlaq4yHLqOxNqeN+skMLQaPowf6hdjyQ2153ua+/YXh3RmoKKowvlFh3D0WaA9irZIAKLqV//IRSlehxJNzDhTRhZ/oYxvJhDTpNqw6e8ZBRjQiVpNPL+vvcAaDC2FEmRpwEEkkimRQIo7jHmYWZq4r9SfyoGqcxscxtklDddXlvVw+4xM3FZAI=') format('woff2');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-home:before {
+  content: "\e6af";
+}
+
+.icon-me:before {
+  content: "\e72b";
+}
+
+.icon-me1:before {
+  content: "\e626";
+}
+
+.icon-contacts-book--fill:before {
+  content: "\e68d";
+}
+
+.icon-contacts-book--line:before {
+  content: "\e6c0";
+}
+
+.icon-home1:before {
+  content: "\e77c";
+}
+

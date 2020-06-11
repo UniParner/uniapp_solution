@@ -1,0 +1,18 @@
+<!-- #ifdef APP-NVUE -->
+		<list class="list" bounce="false" scrollable="false">
+			<cell v-for="(article, index) in articles" :key="article.id">
+				<articlecell :article="article" class="cell"></articlecell>
+			</cell>
+		</list>
+		<!-- #endif -->
+		<!-- #ifndef APP-NVUE -->
+		<view class="list" style="display: flex; flex-direction: column;">
+			<articlecell
+				v-for="(article, index) in articles"
+				:key="article.id"
+				:article="article"
+				class="cell"
+			></articlecell>
+		</view>
+		<!-- #endif -->
+		<text v-if="noMoreData" class="refresh-footer">~我是有底线的~</text>

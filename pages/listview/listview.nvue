@@ -1,0 +1,165 @@
+<template>
+	<view class="container">
+		<view class="container head" style="background-color: #FFFFFF;">
+			<view class="category" @click="changeStyle">
+				<view v-for="index in 6" :key="index" class="category-cell"></view>
+			</view>
+			<searchbar class="search-bar"></searchbar>
+		</view>
+		<!-- #ifdef APP-NVUE -->
+		<list class="list">
+			<cell v-for="(article, index) in articles" :key="index">
+				<articlecell :article="article" class="cell"></articlecell>
+			</cell>
+		</list>
+		<!-- #endif -->
+		<!-- #ifndef APP-NVUE -->
+		<view class="list">
+			<articlecell
+				v-for="(article, index) in articles"
+				:key="index"
+				:article="article"
+				class="cell"
+			></articlecell>
+		</view>
+		<!-- #endif -->
+	</view>
+</template>
+
+<script>
+import unilist from '../../components/uni-list/uni-list.vue';
+import searchbar from './searchbar.vue';
+import articlecell from './articlecell.vue';
+var pageNum = 0;
+export default {
+	components: { searchbar, articlecell, unilist },
+	data() {
+		console.log('这是data');
+		return { articles: [], noMoreData: false, statusBarHeight: 20 };
+	},
+	methods: {
+		click: function() {
+			console.log('触发了加载更多事件……');
+		},
+		changeStyle() {
+			// const subNVue = uni.getSubNVueById('navbar');
+			// const statusBarHeight = this.statusBarHeight;
+			// console.log('修改样式', statusBarHeight);
+			// subNVue.setStyle({
+			// 	position: 'dock',
+			// 	height: '24px',
+			// 	background: '#FF0000'
+			// });
+			// subNVue.show();
+		},
+		loadArticles: function(refresh) {
+			pageNum = refresh ? 0 : ++pageNum;
+			const host = getApp().globalData.host;
+			const thisVue = this;
+			uni.request({
+				method: 'POST',
+				sslVerify: true,
+				header: { 'Content-Type': 'application/json' },
+				url: host + '/api/circle/think/thinkList',
+				data: { pageNum: pageNum, pageSize: 10 },
+				success: function(res) {
+					console.log('哇咔咔22', thisVue);
+					const loadedArticles = res.data.data.result;
+					thisVue.noMoreData = loadedArticles.length < 10;
+					if (refresh) {
+						thisVue.articles = []
+					}
+					thisVue.articles.push(...loadedArticles);
+				},
+				fail: function(reason) {
+					console.log('请求失败', reason, thisVue.host);
+				},
+				complete: function() {
+					console.log('请求完成');
+					if (refresh) {
+						uni.stopPullDownRefresh();
+					}
+				}
+			});
+		}
+	},
+	onReachBottom: function() {
+		this.loadArticles(false);
+	},
+	onPullDownRefresh: function() {
+		this.loadArticles(true);
+	},
+	onLoad() {
+		uni.startPullDownRefresh({});
+	}
+};
+</script>
+
+<style scoped>
+.container {
+	display: flex;
+	flex-direction: column;
+	background-color: #F7F8FA;
+}
+,
+.head {
+	background-color: #2c405a;
+	display: flex;
+	flex-direction: column;
+	border-bottom-left-radius: 40rpx;
+	border-bottom-right-radius: 40rpx;
+}
+.category {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 30rpx 28rpx 0rpx 28rpx;
+}
+,
+.search-bar {
+	margin-left: 30rpx;
+	margin-right: 30rpx;
+	margin-bottom: 20rpx;
+}
+,
+.category-cell {
+	width: 220rpx;
+	height: 148rpx;
+	margin-bottom: 20rpx;
+	background-color: #09bb07;
+}
+,
+.list {
+	margin-top: 30rpx;
+	background-color: #f7f8fa;
+}
+.cell {
+	margin-left: 30rpx !important;
+	margin-right: 30rpx !important;
+	margin-bottom: 30rpx !important;
+}
+,
+.refresh-footer {
+	color: #6d6d72;
+	font-size: 26rpx;
+	padding: 10rpx 0rpx;
+	text-align: center;
+}
+.nav {
+	display: flex;
+	flex-direction: row;
+	height: 44px;
+	background-color: #007aff;
+}
+.search {
+	flex: 1;
+	margin-left: 15rpx;
+	margin-right: 15rpx;
+}
+.status {
+	display: flex;
+	height: var(--status-bar-height);
+	background-color: #ffb400;
+}
+</style>

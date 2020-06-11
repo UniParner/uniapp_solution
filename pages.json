@@ -1,0 +1,114 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/problems/problems",
+			"style": {
+				"enablePullDownRefresh": true,
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/listview/listview",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "home"
+			}
+		},
+		{
+			"path": "pages/me/index",
+			"style": {
+				"navigationBarTitleText": "me"
+			}
+		},
+		{
+			"path": "pages/contacts/index",
+			"style": {
+				"navigationBarTitleText": "联系人"
+			}
+		},
+		{
+			"path": "pages/moments/index",
+			"style": {
+				"navigationBarTitleText": "朋友圈"
+			}
+		},
+		{
+			"path": "pages/goodsdetail/goodsdetail",
+			"style": {
+				"navigationBarTitleText": "产品详情"
+			}
+		},
+		{
+			"path": "pages/nvuetest/nvuetest",
+			"style": {}
+		},
+		{
+			"path": "pages/lineargradient/lineargradient",
+			"style": {}
+		},
+		{
+			"path": "pages/longlist/longlist",
+			"style": {}
+		}, {
+			"path": "pages/nvuetest/customstatusbar/customstatusbar",
+			"style": {
+				"navigationStyle": "custom",
+				"titleNView": false,
+				"app-plus": {
+					"subNVues": [{
+						"id": "statusbar",
+						"path": "components/navibar",
+						"style": {
+							"height":"0rpx"
+						}
+					}]
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"h5": {
+			"titleNView": false
+		}
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"height": "50px",
+		"fontSize": "10px",
+		"iconWidth": "24px",
+		"spacing": "3px",
+		"list": [{
+			"pagePath": "pages/problems/problems",
+			"text": "微信"
+		}, {
+			"pagePath": "pages/contacts/index",
+			"text": "联系人"
+		}, {
+			"pagePath": "pages/moments/index",
+			"text": "朋友圈"
+		}, {
+			"pagePath": "pages/me/index",
+			"text": "我的"
+		}]
+	}
+}

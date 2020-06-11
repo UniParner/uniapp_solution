@@ -1,0 +1,28 @@
+<template>
+	<view>
+		<uni-list>
+			<uni-list-item title="睡觉睡觉" note="的撒打算"></uni-list-item>
+			<uni-list-item title="sss" note="计时开始"></uni-list-item>
+		</uni-list>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				
+			}
+		},
+		methods: {
+			
+		},
+		onReady() {
+			
+		}
+	}
+</script>
+
+<style>
+
+</style>

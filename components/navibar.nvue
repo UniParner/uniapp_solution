@@ -1,0 +1,24 @@
+<template>
+	<view class="navigationbar" :style="{height: statusBarHeight}">
+	</view>
+</template>
+
+<script>
+	export default {
+		data:function() {
+			statusBarHeight: 0
+		},
+		onLoad() {
+			// const thisView = this
+			// const statusBarHeight = uni.getSystemInfoSync().statusBarHeight
+			// console.log('获取到的高度为', statusBarHeight)
+			// thisView.statusBarHeight = statusBarHeight
+		}
+	}
+</script>
+
+<style>
+	.navigationbar {
+		background-color: #990000; 
+	}
+</style>
