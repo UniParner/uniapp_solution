@@ -23,6 +23,9 @@ export default {
 				{ title: '渐变', path: '../lineargradient/lineargradient' },
 				{ title: '文章', path: '../listview/listview' },
 				{ title: '自定以状态栏', path: '../nvuetest/customstatusbar/customstatusbar' },
+				{ title: 'H5编辑器', path: '../h5editor/h5editor' },
+				{title: '富文本', path: '../richtext/richtext'},
+				{title: '腾讯云IM', path: '../tencentim/imlogin'},
 			]
 		};
 	},

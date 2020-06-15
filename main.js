@@ -6,6 +6,7 @@ Vue.prototype.host = "https://test.xdpaction.com"
 
 App.mpType = 'app'
 
+
 const app = new Vue({
   ...App,
 })
