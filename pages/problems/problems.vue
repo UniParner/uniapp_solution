@@ -1,6 +1,6 @@
 <template>
 	<scroll-view class="acontainer">
-		<uni-list style="background-color: #007AFF;">
+		<uni-list>
 			<uni-list-item
 				v-for="problem in problems"
 				:key="problem.title"
@@ -8,7 +8,6 @@
 				@click="navToProblem(problem)"
 			></uni-list-item>
 		</uni-list>
-		
 		<cover-view class="status">
 		</cover-view>
 	</scroll-view>
@@ -26,6 +25,9 @@ export default {
 				{ title: 'H5编辑器', path: '../h5editor/h5editor' },
 				{title: '富文本', path: '../richtext/richtext'},
 				{title: '腾讯云IM', path: '../tencentim/imlogin'},
+				{title: '下载文件', path: '../downloadfile/downloadfile'},
+				{title: '第三方登录、分享', path: '../loginshare3party/loginshare3party'},
+				{title: 'UniApp支付', path: '../payment/payment'}
 			]
 		};
 	},

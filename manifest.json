@@ -1,9 +1,9 @@
 {
-    "name" : "MyUniApp",
+    "name" : "行动派圈子",
     "appid" : "__UNI__BC835A0",
     "description" : "",
     "versionName" : "1.0.0",
-    "versionCode" : "100",
+    "versionCode" : 1,
     "transformPx" : false,
     /* 5+App特有相关 */
     "app-plus" : {
@@ -17,7 +17,10 @@
             "delay" : 0
         },
         /* 模块配置 */
-        "modules" : {},
+        "modules" : {
+            "OAuth" : {},
+            "Payment" : {}
+        },
         /* 应用发布信息 */
         "distribute" : {
             /* android打包配置 */
@@ -48,9 +51,25 @@
                 ]
             },
             /* ios打包配置 */
-            "ios" : {},
+            "ios" : {
+                "privacyDescription" : {
+                    "NSPhotoLibraryUsageDescription" : "上传图片需要相册权限，请允许",
+                    "NSPhotoLibraryAddUsageDescription" : "导入视频、照片到相册，需要相册权限，请允许",
+                    "NSCameraUsageDescription" : "拍摄需要摄像头权限，请允许",
+                    "NSMicrophoneUsageDescription" : "拍摄视频、录音需要麦克风权限，请允许"
+                }
+            },
             /* SDK配置 */
-            "sdkConfigs" : {}
+            "sdkConfigs" : {
+                "oauth" : {
+                    "weixin" : {
+                        "appid" : "wx6d267fd77e48c4ac",
+                        "appsecret" : "aaa",
+                        "UniversalLinks" : "https://s55kon.jmlk.co/"
+                    },
+                    "apple" : {}
+                }
+            }
         }
     },
     /* 快应用特有相关 */
@@ -72,7 +91,7 @@
     "mp-toutiao" : {
         "usingComponents" : true
     },
-    "uniStatistics": {  
-        "enable": false
+    "uniStatistics" : {
+        "enable" : false
     }
 }

@@ -1,0 +1,87 @@
+{
+    "name": "onConversationListUpdated",
+    "data": [
+        {
+            "conversationID": "GROUP10088",
+            "unreadCount": 15,
+            "type": "GROUP",
+            "lastMessage": {
+                "lastTime": 1592363588,
+                "lastSequence": 16,
+                "fromAccount": "100011664937",
+                "messageForShow": "我发送了群消息7",
+                "type": "TIMTextElem",
+                "payload": {
+                    "text": "我发送了群消息7"
+                },
+                "isRevoked": false
+            },
+            "_isInfoCompleted": false,
+            "peerReadTime": 0,
+            "groupProfile": {
+                "groupID": "10088",
+                "name": "我是大老爷",
+                "avatar": "",
+                "type": "Public",
+                "introduction": "",
+                "notification": "",
+                "ownerID": "",
+                "createTime": "",
+                "infoSequence": "",
+                "lastInfoTime": "",
+                "selfInfo": {
+                    "messageRemindType": "AcceptAndNotify",
+                    "joinTime": 1592220336,
+                    "nameCard": "",
+                    "role": "Owner"
+                },
+                "lastMessage": {
+                    "lastTime": 1592363588,
+                    "lastSequence": "",
+                    "fromAccount": "",
+                    "messageForShow": ""
+                },
+                "nextMessageSeq": 17,
+                "memberNum": "",
+                "maxMemberNum": "",
+                "joinOption": "",
+                "groupCustomField": []
+            }
+        },
+        {
+            "conversationID": "C2C10086",
+            "unreadCount": 0,
+            "type": "C2C",
+            "lastMessage": {
+                "lastTime": 1592362141,
+                "lastSequence": 1049010001,
+                "fromAccount": "1234",
+                "messageForShow": "我发了消息给你",
+                "type": "TIMTextElem",
+                "payload": {
+                    "text": "我发了消息给你"
+                },
+                "isRevoked": false
+            },
+            "_isInfoCompleted": false,
+            "peerReadTime": 0,
+            "userProfile": {
+                "userID": "10086",
+                "nick": "",
+                "gender": "",
+                "birthday": 0,
+                "location": "",
+                "selfSignature": "",
+                "allowType": "AllowType_Type_AllowAny",
+                "language": 0,
+                "avatar": "",
+                "messageSettings": 0,
+                "adminForbidType": "AdminForbid_Type_None",
+                "level": 0,
+                "role": 0,
+                "lastUpdatedTime": 0,
+                "profileCustomField": []
+            }
+        }
+    ]
+}

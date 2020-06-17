@@ -64,29 +64,66 @@
 						"id": "statusbar",
 						"path": "components/navibar",
 						"style": {
-							"height":"0rpx"
+							"height": "0rpx"
 						}
 					}]
 				}
 			}
+		}, {
+			"path": "pages/h5editor/h5editor",
+			"style": {}
+		}, {
+			"path": "pages/richtext/richtext",
+			"style": {}
+		}, {
+			"path": "pages/tencentim/tencentim",
+			"style": {}
+		}, {
+			"path": "pages/tencentim/imlogin",
+			"style": {}
+		}, {
+			"path": "pages/tencentim/imcoversation",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "IM对话",
+				"app-plus": {
+					"titleNView": {
+						"padding-right": "6px",
+						"buttons": [{
+							"text": "创建会话",
+							"fontSize": "16px",
+							"width": "auto"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/downloadfile/downloadfile",
+			"style": {}
+		}, {
+			"path": "pages/loginshare3party/loginshare3party",
+			"style": {}
+		}, {
+			"path": "pages/payment/payment",
+			"style": {}
+		}, {
+			"path": "pages/tencentim/imconversationlist",
+			
+			"style": {
+				"navigationBarTitleText": "对话列表",
+				"app-plus": {
+					"titleNView": {
+						"padding-right": "6px",
+						"buttons": [{
+							"text": "创建会话",
+							"fontSize": "16px",
+							"width": "auto"
+						}]
+					}
+				}
+			}
 		}
-	    ,{
-            "path" : "pages/h5editor/h5editor",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/richtext/richtext",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/tencentim/tencentim",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/tencentim/imlogin",
-            "style" : {}
-        }
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

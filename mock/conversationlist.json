@@ -1,0 +1,150 @@
+{
+	"name": "onConversationListUpdated",
+	"data": [{
+			"conversationID": "C2Ca1234",
+			"unreadCount": 1,
+			"type": "C2C",
+			"lastMessage": {
+				"lastTime": 1592397392,
+				"lastSequence": 2036310001,
+				"fromAccount": "a1234",
+				"messageForShow": "来自1234的消息",
+				"payload": {
+					"text": "来自1234的消息"
+				},
+				"type": "TIMTextElem",
+				"isRevoked": false
+			},
+			"_isInfoCompleted": false,
+			"peerReadTime": 0,
+			"userProfile": {
+				"userID": "a1234",
+				"nick": "",
+				"gender": "",
+				"birthday": 0,
+				"location": "",
+				"selfSignature": "",
+				"allowType": "AllowType_Type_AllowAny",
+				"language": 0,
+				"avatar": "",
+				"messageSettings": 0,
+				"adminForbidType": "AdminForbid_Type_None",
+				"level": 0,
+				"role": 0,
+				"lastUpdatedTime": 0,
+				"profileCustomField": []
+			}
+		},
+		{
+			"conversationID": "GROUP10088",
+			"unreadCount": 15,
+			"type": "GROUP",
+			"lastMessage": {
+				"lastTime": 1592363588,
+				"lastSequence": 16,
+				"fromAccount": "100011664937",
+				"messageForShow": "我发送了群消息7",
+				"type": "TIMTextElem",
+				"payload": {
+					"text": "我发送了群消息7"
+				},
+				"isRevoked": false
+			},
+			"_isInfoCompleted": false,
+			"peerReadTime": 0,
+			"groupProfile": {
+				"groupID": "10088",
+				"name": "我是大老爷",
+				"avatar": "",
+				"type": "Public",
+				"introduction": "",
+				"notification": "",
+				"ownerID": "",
+				"createTime": "",
+				"infoSequence": "",
+				"lastInfoTime": "",
+				"selfInfo": {
+					"messageRemindType": "AcceptAndNotify",
+					"joinTime": 1592220336,
+					"nameCard": "",
+					"role": "Owner"
+				},
+				"lastMessage": {
+					"lastTime": 1592363588,
+					"lastSequence": "",
+					"fromAccount": "",
+					"messageForShow": ""
+				},
+				"nextMessageSeq": 17,
+				"memberNum": "",
+				"maxMemberNum": "",
+				"joinOption": "",
+				"groupCustomField": []
+			}
+		},
+		{
+			"conversationID": "C2C10086",
+			"unreadCount": 0,
+			"type": "C2C",
+			"lastMessage": {
+				"lastTime": 1592362141,
+				"lastSequence": 1049010001,
+				"fromAccount": "1234",
+				"messageForShow": "我发了消息给你",
+				"type": "TIMTextElem",
+				"payload": {
+					"text": "我发了消息给你"
+				},
+				"isRevoked": false
+			},
+			"_isInfoCompleted": false,
+			"peerReadTime": 0,
+			"userProfile": {
+				"userID": "10086",
+				"nick": "",
+				"gender": "",
+				"birthday": 0,
+				"location": "",
+				"selfSignature": "",
+				"allowType": "AllowType_Type_AllowAny",
+				"language": 0,
+				"avatar": "",
+				"messageSettings": 0,
+				"adminForbidType": "AdminForbid_Type_None",
+				"level": 0,
+				"role": 0,
+				"lastUpdatedTime": 0,
+				"profileCustomField": []
+			}
+		},
+		{
+			"conversationID": "@TIM#SYSTEM",
+			"unreadCount": 0,
+			"type": "@TIM#SYSTEM",
+			"lastMessage": {
+				"lastTime": 1592220336,
+				"lastSequence": 627639321,
+				"fromAccount": "@TIM#SYSTEM",
+				"messageForShow": "[群系统通知]",
+				"payload": {
+					"operationType": 6,
+					"operatorID": "1234",
+					"messageKey": 1592220336348,
+					"authentication": "",
+					"handleMessage": "",
+					"userDefinedField": "",
+					"groupProfile": {
+						"from": "@TIM#SYSTEM",
+						"to": "1234",
+						"name": "我是大老爷",
+						"groupID": "10088"
+					}
+				},
+				"type": "TIMGroupSystemNoticeElem",
+				"isRevoked": false
+			},
+			"_isInfoCompleted": false,
+			"peerReadTime": 0
+		}
+	]
+}

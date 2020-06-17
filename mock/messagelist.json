@@ -1,0 +1,518 @@
+{
+	"code": 0,
+	"data": {
+		"messageList": [{
+				"ID": "GROUP10088-2-1952118102-0",
+				"conversationID": "GROUP10088",
+				"conversationType": "GROUP",
+				"time": 1592220354,
+				"sequence": 2,
+				"clientSequence": 2,
+				"random": 1952118102,
+				"priority": "Normal",
+				"nick": "",
+				"avatar": "",
+				"isPeerRead": false,
+				"_elements": [{
+					"type": "TIMTextElem",
+					"content": {
+						"text": "jskajldasj "
+					}
+				}],
+				"isPlaceMessage": 0,
+				"isRevoked": false,
+				"geo": {},
+				"from": "100011664937",
+				"to": "10088",
+				"flow": "in",
+				"isSystemMessage": false,
+				"protocol": "JSON",
+				"isResend": false,
+				"isRead": false,
+				"status": "success",
+				"payload": {
+					"text": "jskajldasj "
+				},
+				"type": "TIMTextElem"
+			},
+			{
+				"ID": "GROUP10088-3-1218606876-0",
+				"conversationID": "GROUP10088",
+				"conversationType": "GROUP",
+				"time": 1592220418,
+				"sequence": 3,
+				"clientSequence": 3,
+				"random": 1218606876,
+				"priority": "Normal",
+				"nick": "",
+				"avatar": "",
+				"isPeerRead": false,
+				"_elements": [{
+					"type": "TIMTextElem",
+					"content": {
+						"text": " 这是一条测试消息"
+					}
+				}],
+				"isPlaceMessage": 0,
+				"isRevoked": false,
+				"geo": {},
+				"from": "100011664937",
+				"to": "10088",
+				"flow": "in",
+				"isSystemMessage": false,
+				"protocol": "JSON",
+				"isResend": false,
+				"isRead": false,
+				"status": "success",
+				"payload": {
+					"text": " 这是一条测试消息"
+				},
+				"type": "TIMTextElem"
+			},
+			{
+				"ID": "GROUP10088-4-446793444-0",
+				"conversationID": "GROUP10088",
+				"conversationType": "GROUP",
+				"time": 1592220501,
+				"sequence": 4,
+				"clientSequence": 4,
+				"random": 446793444,
+				"priority": "Normal",
+				"nick": "",
+				"avatar": "",
+				"isPeerRead": false,
+				"_elements": [{
+					"type": "TIMTextElem",
+					"content": {
+						"text": " 这是一条测试消息"
+					}
+				}],
+				"isPlaceMessage": 0,
+				"isRevoked": false,
+				"geo": {},
+				"from": "100011664937",
+				"to": "10088",
+				"flow": "in",
+				"isSystemMessage": false,
+				"protocol": "JSON",
+				"isResend": false,
+				"isRead": false,
+				"status": "success",
+				"payload": {
+					"text": " 这是一条测试消息"
+				},
+				"type": "TIMTextElem"
+			},
+			{
+				"ID": "GROUP10088-5-682901927-0",
+				"conversationID": "GROUP10088",
+				"conversationType": "GROUP",
+				"time": 1592220738,
+				"sequence": 5,
+				"clientSequence": 5,
+				"random": 682901927,
+				"priority": "Normal",
+				"nick": "",
+				"avatar": "",
+				"isPeerRead": false,
+				"_elements": [{
+					"type": "TIMTextElem",
+					"content": {
+						"text": " 这是一条测试消息2"
+					}
+				}],
+				"isPlaceMessage": 0,
+				"isRevoked": false,
+				"geo": {},
+				"from": "100011664937",
+				"to": "10088",
+				"flow": "in",
+				"isSystemMessage": false,
+				"protocol": "JSON",
+				"isResend": false,
+				"isRead": false,
+				"status": "success",
+				"payload": {
+					"text": " 这是一条测试消息2"
+				},
+				"type": "TIMTextElem"
+			},
+			{
+				"ID": "GROUP10088-6-450873823-0",
+				"conversationID": "GROUP10088",
+				"conversationType": "GROUP",
+				"time": 1592221090,
+				"sequence": 6,
+				"clientSequence": 6,
+				"random": 450873823,
+				"priority": "Normal",
+				"nick": "",
+				"avatar": "",
+				"isPeerRead": false,
+				"_elements": [{
+					"type": "TIMTextElem",
+					"content": {
+						"text": " 这是一条测试消息3"
+					}
+				}],
+				"isPlaceMessage": 0,
+				"isRevoked": false,
+				"geo": {},
+				"from": "100011664937",
+				"to": "10088",
+				"flow": "in",
+				"isSystemMessage": false,
+				"protocol": "JSON",
+				"isResend": false,
+				"isRead": false,
+				"status": "success",
+				"payload": {
+					"text": " 这是一条测试消息3"
+				},
+				"type": "TIMTextElem"
+			},
+			{
+				"ID": "GROUP10088-7-1936251626-0",
+				"conversationID": "GROUP10088",
+				"conversationType": "GROUP",
+				"time": 1592221124,
+				"sequence": 7,
+				"clientSequence": 7,
+				"random": 1936251626,
+				"priority": "Normal",
+				"nick": "",
+				"avatar": "",
+				"isPeerRead": false,
+				"_elements": [{
+					"type": "TIMTextElem",
+					"content": {
+						"text": " 这是一条测试消息4"
+					}
+				}],
+				"isPlaceMessage": 0,
+				"isRevoked": false,
+				"geo": {},
+				"from": "100011664937",
+				"to": "10088",
+				"flow": "in",
+				"isSystemMessage": false,
+				"protocol": "JSON",
+				"isResend": false,
+				"isRead": false,
+				"status": "success",
+				"payload": {
+					"text": " 这是一条测试消息4"
+				},
+				"type": "TIMTextElem"
+			},
+			{
+				"ID": "GROUP10088-8-231643357-0",
+				"conversationID": "GROUP10088",
+				"conversationType": "GROUP",
+				"time": 1592362254,
+				"sequence": 8,
+				"clientSequence": 8,
+				"random": 231643357,
+				"priority": "Normal",
+				"nick": "",
+				"avatar": "",
+				"isPeerRead": false,
+				"_elements": [{
+					"type": "TIMTextElem",
+					"content": {
+						"text": "到了时间考试啊"
+					}
+				}],
+				"isPlaceMessage": 0,
+				"isRevoked": false,
+				"geo": {},
+				"from": "100011664937",
+				"to": "10088",
+				"flow": "in",
+				"isSystemMessage": false,
+				"protocol": "JSON",
+				"isResend": false,
+				"isRead": false,
+				"status": "success",
+				"payload": {
+					"text": "到了时间考试啊"
+				},
+				"type": "TIMTextElem"
+			},
+			{
+				"ID": "GROUP10088-9-433279048-0",
+				"conversationID": "GROUP10088",
+				"conversationType": "GROUP",
+				"time": 1592362384,
+				"sequence": 9,
+				"clientSequence": 9,
+				"random": 433279048,
+				"priority": "Normal",
+				"nick": "",
+				"avatar": "",
+				"isPeerRead": false,
+				"_elements": [{
+					"type": "TIMTextElem",
+					"content": {
+						"text": "我发送了群消息"
+					}
+				}],
+				"isPlaceMessage": 0,
+				"isRevoked": false,
+				"geo": {},
+				"from": "100011664937",
+				"to": "10088",
+				"flow": "in",
+				"isSystemMessage": false,
+				"protocol": "JSON",
+				"isResend": false,
+				"isRead": false,
+				"status": "success",
+				"payload": {
+					"text": "我发送了群消息"
+				},
+				"type": "TIMTextElem"
+			},
+			{
+				"ID": "GROUP10088-10-1917996217-0",
+				"conversationID": "GROUP10088",
+				"conversationType": "GROUP",
+				"time": 1592363201,
+				"sequence": 10,
+				"clientSequence": 10,
+				"random": 1917996217,
+				"priority": "Normal",
+				"nick": "",
+				"avatar": "",
+				"isPeerRead": false,
+				"_elements": [{
+					"type": "TIMTextElem",
+					"content": {
+						"text": "我发送了群消息"
+					}
+				}],
+				"isPlaceMessage": 0,
+				"isRevoked": false,
+				"geo": {},
+				"from": "100011664937",
+				"to": "10088",
+				"flow": "in",
+				"isSystemMessage": false,
+				"protocol": "JSON",
+				"isResend": false,
+				"isRead": false,
+				"status": "success",
+				"payload": {
+					"text": "我发送了群消息"
+				},
+				"type": "TIMTextElem"
+			},
+			{
+				"ID": "GROUP10088-11-1234639389-0",
+				"conversationID": "GROUP10088",
+				"conversationType": "GROUP",
+				"time": 1592363338,
+				"sequence": 11,
+				"clientSequence": 11,
+				"random": 1234639389,
+				"priority": "Normal",
+				"nick": "",
+				"avatar": "",
+				"isPeerRead": false,
+				"_elements": [{
+					"type": "TIMTextElem",
+					"content": {
+						"text": "我发送了群消息2"
+					}
+				}],
+				"isPlaceMessage": 0,
+				"isRevoked": false,
+				"geo": {},
+				"from": "100011664937",
+				"to": "10088",
+				"flow": "in",
+				"isSystemMessage": false,
+				"protocol": "JSON",
+				"isResend": false,
+				"isRead": false,
+				"status": "success",
+				"payload": {
+					"text": "我发送了群消息2"
+				},
+				"type": "TIMTextElem"
+			},
+			{
+				"ID": "GROUP10088-12-1153470574-0",
+				"conversationID": "GROUP10088",
+				"conversationType": "GROUP",
+				"time": 1592363366,
+				"sequence": 12,
+				"clientSequence": 12,
+				"random": 1153470574,
+				"priority": "Normal",
+				"nick": "",
+				"avatar": "",
+				"isPeerRead": false,
+				"_elements": [{
+					"type": "TIMTextElem",
+					"content": {
+						"text": "我发送了群消息3"
+					}
+				}],
+				"isPlaceMessage": 0,
+				"isRevoked": false,
+				"geo": {},
+				"from": "100011664937",
+				"to": "10088",
+				"flow": "in",
+				"isSystemMessage": false,
+				"protocol": "JSON",
+				"isResend": false,
+				"isRead": false,
+				"status": "success",
+				"payload": {
+					"text": "我发送了群消息3"
+				},
+				"type": "TIMTextElem"
+			},
+			{
+				"ID": "GROUP10088-13-1382894770-0",
+				"conversationID": "GROUP10088",
+				"conversationType": "GROUP",
+				"time": 1592363434,
+				"sequence": 13,
+				"clientSequence": 13,
+				"random": 1382894770,
+				"priority": "Normal",
+				"nick": "",
+				"avatar": "",
+				"isPeerRead": false,
+				"_elements": [{
+					"type": "TIMTextElem",
+					"content": {
+						"text": "我发送了群消息4"
+					}
+				}],
+				"isPlaceMessage": 0,
+				"isRevoked": false,
+				"geo": {},
+				"from": "100011664937",
+				"to": "10088",
+				"flow": "in",
+				"isSystemMessage": false,
+				"protocol": "JSON",
+				"isResend": false,
+				"isRead": false,
+				"status": "success",
+				"payload": {
+					"text": "我发送了群消息4"
+				},
+				"type": "TIMTextElem"
+			},
+			{
+				"ID": "GROUP10088-14-896391090-0",
+				"conversationID": "GROUP10088",
+				"conversationType": "GROUP",
+				"time": 1592363528,
+				"sequence": 14,
+				"clientSequence": 14,
+				"random": 896391090,
+				"priority": "Normal",
+				"nick": "",
+				"avatar": "",
+				"isPeerRead": false,
+				"_elements": [{
+					"type": "TIMTextElem",
+					"content": {
+						"text": "我发送了群消息5"
+					}
+				}],
+				"isPlaceMessage": 0,
+				"isRevoked": false,
+				"geo": {},
+				"from": "100011664937",
+				"to": "10088",
+				"flow": "in",
+				"isSystemMessage": false,
+				"protocol": "JSON",
+				"isResend": false,
+				"isRead": false,
+				"status": "success",
+				"payload": {
+					"text": "我发送了群消息5"
+				},
+				"type": "TIMTextElem"
+			},
+			{
+				"ID": "GROUP10088-15-1202821910-0",
+				"conversationID": "GROUP10088",
+				"conversationType": "GROUP",
+				"time": 1592363579,
+				"sequence": 15,
+				"clientSequence": 15,
+				"random": 1202821910,
+				"priority": "Normal",
+				"nick": "",
+				"avatar": "",
+				"isPeerRead": false,
+				"_elements": [{
+					"type": "TIMTextElem",
+					"content": {
+						"text": "我发送了群消息6"
+					}
+				}],
+				"isPlaceMessage": 0,
+				"isRevoked": false,
+				"geo": {},
+				"from": "100011664937",
+				"to": "10088",
+				"flow": "in",
+				"isSystemMessage": false,
+				"protocol": "JSON",
+				"isResend": false,
+				"isRead": false,
+				"status": "success",
+				"payload": {
+					"text": "我发送了群消息6"
+				},
+				"type": "TIMTextElem"
+			},
+			{
+				"ID": "GROUP10088-16-762210222-0",
+				"conversationID": "GROUP10088",
+				"conversationType": "GROUP",
+				"time": 1592363588,
+				"sequence": 16,
+				"clientSequence": 16,
+				"random": 762210222,
+				"priority": "Normal",
+				"nick": "",
+				"avatar": "",
+				"isPeerRead": false,
+				"_elements": [{
+					"type": "TIMTextElem",
+					"content": {
+						"text": "我发送了群消息7"
+					}
+				}],
+				"isPlaceMessage": 0,
+				"isRevoked": false,
+				"geo": {},
+				"from": "100011664937",
+				"to": "10088",
+				"flow": "in",
+				"isSystemMessage": false,
+				"protocol": "JSON",
+				"isResend": false,
+				"isRead": false,
+				"status": "success",
+				"payload": {
+					"text": "我发送了群消息7"
+				},
+				"type": "TIMTextElem"
+			}
+		],
+		"nextReqMessageID": "GROUP10088-2-1952118102-0",
+		"isCompleted": false
+	}
+}

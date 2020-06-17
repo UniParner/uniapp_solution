@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+cos-js-sdk-v5@^0.5.26:
+  version "0.5.26"
+  resolved "https://registry.npmjs.org/cos-js-sdk-v5/-/cos-js-sdk-v5-0.5.26.tgz#4946762d353e09fb80a2e84466ab0d5236a167ce"
+  integrity sha512-hv5AVd9EMPn01GRHnnR1UBeEI9RzuzIEJn9DOD/HpcDbO+8qBLKSCj2euMRA0kthasAuquVjbRWo1VChLNxn3g==
+  dependencies:
+    xmldom "^0.1.27"
+
 cos-wx-sdk-v5@^0.7.10:
   version "0.7.10"
   resolved "https://registry.npmjs.org/cos-wx-sdk-v5/-/cos-wx-sdk-v5-0.7.10.tgz#fecac1a533d3bec86cf548c6c8f4432b50dce06b"
@@ -20,6 +27,11 @@ rxjs@^6.5.5:
   integrity sha512-WfQI+1gohdf0Dai/Bbmk5L5ItH5tYqm3ki2c5GdWhKjalzjg93N3avFjVStyZZz+A2Em+ZxKH5bNghw9UeylGQ==
   dependencies:
     tslib "^1.9.0"
+
+tim-js-sdk@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.npmjs.org/tim-js-sdk/-/tim-js-sdk-2.7.0.tgz#c63e6f8933ab25dfccb9de76a2611b6c74c1dbdc"
+  integrity sha512-uItCojQGJB5RRx3UAKE+hOu462G/yjT6V75iwjVwKENdR+EsbHC2A5NgyYIZJ7guNtdx7yR5TZ0+SA5qofZ/Ew==
 
 tim-wx-sdk@^2.7.0:
   version "2.7.0"

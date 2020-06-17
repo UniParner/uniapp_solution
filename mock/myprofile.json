@@ -1,0 +1,20 @@
+{
+	"code": 0,
+	"data": {
+		"userID": "1234",
+		"nick": "",
+		"gender": "",
+		"birthday": 0,
+		"location": "",
+		"selfSignature": "",
+		"allowType": "AllowType_Type_AllowAny",
+		"language": 0,
+		"avatar": "",
+		"messageSettings": 0,
+		"adminForbidType": "AdminForbid_Type_None",
+		"level": 0,
+		"role": 0,
+		"lastUpdatedTime": 1592362135575,
+		"profileCustomField": []
+	}
+}

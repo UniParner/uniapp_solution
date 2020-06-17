@@ -1,0 +1,43 @@
+{
+	"components": {},
+	"directives": {},
+	"filters": {},
+	"beforeCreate": [
+		null,
+		null
+	],
+	"beforeUpdate": [
+		null
+	],
+	"beforeDestroy": [
+		null,
+		null
+	],
+	"created": [
+		null
+	],
+	"mounted": [
+		null
+	],
+	"methods": {},
+	"onNavigationBarButtonTap": [
+		null
+	],
+	"onLoad": [
+		null
+	],
+	"onReady": [
+		null
+	],
+	"staticRenderFns": [],
+	"_compiled": true,
+	"__file": "Users/ryan/workspace/dcloud/MyUniApp/pages/tencentim/imcoversation.vue",
+	"_Ctor": {},
+	"mpType": "page",
+	"pageId": "4",
+	"pagePath": "pages/tencentim/imcoversation",
+	"pageQuery": {
+		"conversationID": "GROUP10088",
+		"type": "GROUP"
+	}
+}
