@@ -27,7 +27,8 @@ export default {
 				{title: '腾讯云IM', path: '../tencentim/imlogin'},
 				{title: '下载文件', path: '../downloadfile/downloadfile'},
 				{title: '第三方登录、分享', path: '../loginshare3party/loginshare3party'},
-				{title: 'UniApp支付', path: '../payment/payment'}
+				{title: 'UniApp支付', path: '../payment/payment'},
+				{title: 'Vuex示例，Counter', path: '../vuexdemo/vuexdemo'}
 			]
 		};
 	},
@@ -37,6 +38,9 @@ export default {
 				url: problem.path + '?title=' + problem.title
 			});
 		}
+	},
+	onReady() {
+		
 	}
 };
 </script>

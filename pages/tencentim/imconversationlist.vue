@@ -1,16 +1,21 @@
 <template>
 	<view>
+		<!-- #ifdef APP-NVUE -->
+		<text>总共有{{conversationList.length}}条数据</text>
+		<!-- #endif -->
 		<uni-list style="flex: 1; display: flex;">
-			<!-- #ifndef APP-NVUE -->
+			<!-- <text>{{isIMSDKReady ? 'Ready': 'Not ready'}}</text> -->
+			<!-- #ifdef APP-NVUE -->
 			<cell v-for="conversation in conversationList" :key="conversation.conversationID" @click="navToConversation(conversation)">
 				<conversationcell :conversation="conversation">
 				</conversationcell>
 			</cell>
 			<!-- #endif -->
 			<!-- #ifndef APP-NVUE -->
-			<conversationcell v-for="conversation in conversationList" :key="conversation.conversationID" @click="navToConversation(conversation)"
-			 :conversation="conversation">
-			</conversationcell>
+			<view v-for="conversation in conversationList" :key="conversation.conversationID" @click="navToConversation(conversation)">
+				<conversationcell :conversation="conversation">
+				</conversationcell>
+			</view>
 			<!-- #endif -->
 		</uni-list>
 
@@ -25,7 +30,7 @@
 
 <script>
 	import TIM from '../../libs/tim/TIMSDK.js'
-	import { tim, eventObs } from '../../libs/tim/TIMManager.js'
+	import { tim } from '../../libs/tim/TIMManager.js'
 	import uniPopup from '@/components/uni-popup/uni-popup.vue'
 	import uniPopupMessage from '@/components/uni-popup/uni-popup-message.vue'
 	import uniPopupDialog from '@/components/uni-popup/uni-popup-dialog.vue'
@@ -41,6 +46,7 @@
 			async fetchConversationList() {
 				try {
 					const response = await tim.getConversationList();
+					console.log('获取到的会话列表：', response)
 					this.conversationList = response.data.conversationList
 					console.log('获取到的会话列表为：', this.conversationList)
 				} catch (e) {
@@ -72,30 +78,46 @@
 						url: './imcoversation?' + `type=${TIM.TYPES.CONV_C2C}&to=${userID}`
 					})
 				}
+			},
+			onIMConversarionListUpdated(event) {
+				console.log('会话列表发生了变化：', event)
+				this.conversationList = event.data
+			}
+		},
+		computed: {
+			isIMSDKReady() {
+				console.log('imsdk的状态发生了变化：', this.$store.state.isIMReady)
+				return this.$store.state.isIMReady
+			}
+		},
+		watch: {
+			isIMSDKReady(isReady) {
+				if (isReady) {
+					if (this.conversationList.length > 0) {
+						return
+					}
+					this.fetchConversationList()
+				}
 			}
 		},
 		onReady() {
 			const thisVue = this
-			this.fetchConversationList()
-			const dispose = eventObs.subscribe(event => {
-				if (event.name == TIM.EVENT.CONVERSATION_LIST_UPDATED) {
-					console.log('会话列表发生了变化：', event)
-					thisVue.conversationList = event.data
-				}
-				console.log("this = ", this, " ;thisVue = ", thisVue)
-			}, error => {
-				console.error('接收消息事件出错了', error)
-			})
-			console.log('需要在页面关闭时注销监听器', dispose)
+			console.warn('imsdk是否已经可用了：', this.isIMSDKReady)
+			if (this.isIMSDKReady) {
+				this.fetchConversationList()
+			}
+			tim.on(TIM.EVENT.CONVERSATION_LIST_UPDATED, this.onIMConversarionListUpdated)
 		},
 		onNavigationBarButtonTap() {
 			this.openPopup()
+
+		},
+		onUnload() {
+			tim.off(TIM.EVENT.CONVERSATION_LIST_UPDATED, this.onIMConversarionListUpdated)
 		}
 	}
 </script>
 
 <style>
-	.cell {
-
-	}
+	.cell {}
 </style>

@@ -85,17 +85,18 @@
 			"path": "pages/tencentim/imcoversation",
 			"style": {
 				"enablePullDownRefresh": true,
-				"navigationBarTitleText": "IM对话",
-				"app-plus": {
-					"titleNView": {
-						"padding-right": "6px",
-						"buttons": [{
-							"text": "创建会话",
-							"fontSize": "16px",
-							"width": "auto"
-						}]
-					}
-				}
+				"navigationBarTitleText": "IM对话"
+				// ,
+				// "app-plus": {
+				// 	"titleNView": {
+				// 		"padding-right": "6px",
+				// 		"buttons": [{
+				// 			"text": "创建会话",
+				// 			"fontSize": "16px",
+				// 			"width": "auto"
+				// 		}]
+				// 	}
+				// }
 			}
 		}, {
 			"path": "pages/downloadfile/downloadfile",
@@ -123,7 +124,11 @@
 				}
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/vuexdemo/vuexdemo",
+            "style" : {}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

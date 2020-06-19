@@ -2,11 +2,14 @@
   "dependencies": {
     "cos-js-sdk-v5": "^0.5.26",
     "cos-wx-sdk-v5": "^0.7.10",
+    "es6-promise": "^4.2.8",
     "rxjs": "^6.5.5",
     "rxjs-compat": "^6.5.5",
     "tim-js-sdk": "^2.7.0",
     "tim-wx-sdk": "^2.7.0",
     "tls-sig-api-v2": "^1.0.0",
-    "vue-html5-editor": "^1.1.1"
+    "underscore": "^1.10.2",
+    "vue-html5-editor": "^1.1.1",
+    "vuex": "^3.4.0"
   }
 }

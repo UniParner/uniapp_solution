@@ -1,16 +1,17 @@
 import TIM from '../../libs/tim/TIMSDK.js'
 import { tim } from '../../libs/tim/TIMManager.js'
+import { urlUserSig } from '../../config/urls.js'
 
 const sendTextMsg = (touserid, type, text) => {
 	const conversationType = type
-	console.log('发送消息：向 '+ touserid + ' 发送了 ' + text)
+	console.log('发送消息：向 ' + touserid + ' 发送了 ' + text)
 	let message = tim.createTextMessage({
 		to: touserid,
 		conversationType,
-		payload: {text}
+		payload: { text }
 	});
 	// 2. 发送消息
-	return tim.sendMessage(message);	
+	return tim.sendMessage(message);
 }
 
 const createGroup = (groupID) => {
@@ -22,6 +23,6 @@ const createGroup = (groupID) => {
 }
 
 module.exports = {
-	sendTextMsg: sendTextMsg,
-	createGroup: createGroup
+	sendTextMsg,
+	createGroup
 }

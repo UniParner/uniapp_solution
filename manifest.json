@@ -19,7 +19,8 @@
         /* 模块配置 */
         "modules" : {
             "OAuth" : {},
-            "Payment" : {}
+            "Payment" : {},
+            "Share" : {}
         },
         /* 应用发布信息 */
         "distribute" : {
@@ -68,6 +69,12 @@
                         "UniversalLinks" : "https://s55kon.jmlk.co/"
                     },
                     "apple" : {}
+                },
+                "share" : {
+                    "weixin" : {
+                        "appid" : "wx6d267fd77e48c4ac",
+                        "UniversalLinks" : "https://s55kon.jmlk.co/"
+                    }
                 }
             }
         }

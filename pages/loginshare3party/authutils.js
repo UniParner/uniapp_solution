@@ -3,7 +3,7 @@
 // HTML5+ 授权操作：https://www.html5plus.org/doc/zh_cn/oauth.html#plus.oauth.AuthService.authorize
 // 第三方App信息：https://blog.csdn.net/xiaocaoyu111/article/details/103036666
 const otherAppInfos = {
-	"wechat": {
+	"weixin": {
 		pname: "com.tencent.mm",
 		action: "weixin://"
 	},
@@ -11,7 +11,7 @@ const otherAppInfos = {
 		pname: "com.tencent.mobileqq",
 		action: "mqq://"
 	},
-	"weibo": {
+	"sinaweibo": {
 		pname: "com.sina.weibo",
 		action: "sinaweibo://"
 	},
@@ -78,7 +78,7 @@ const logout = function(service) {
 /// 微信登录操作,这里只是做了授权操作,登录需要获取AppSecrect有安全风险,所以需要后台登录;
 // 手机未安装
 const wechatLogin = (options) => {
-	if (!isAppInstalled('wechat')) {
+	if (!isAppInstalled('weixin')) {
 		return Promise.reject({ code: -1002, msg: '该设备未安装微信'})
 	}
 	return fetchServices().then(authServices => {
