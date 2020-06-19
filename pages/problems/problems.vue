@@ -28,7 +28,8 @@ export default {
 				{title: '下载文件', path: '../downloadfile/downloadfile'},
 				{title: '第三方登录、分享', path: '../loginshare3party/loginshare3party'},
 				{title: 'UniApp支付', path: '../payment/payment'},
-				{title: 'Vuex示例，Counter', path: '../vuexdemo/vuexdemo'}
+				{title: 'Vuex示例，Counter', path: '../vuexdemo/vuexdemo'},
+				{title: '键盘处理', path: '../dealkeyboard/dealkeyboard'},
 			]
 		};
 	},

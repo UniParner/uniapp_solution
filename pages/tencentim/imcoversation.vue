@@ -1,9 +1,9 @@
 <template>
-	<view class="">
+	<view class="container">
 		<uni-list class="list">
 			<text v-if="nomoreData" class="nomore-data">没有更多数据了</text>
-			<messagecell v-for="(msg, index) in msgs" :key="msg.ID" :message="msg" :class="{'lastcell': index==msgs.length-1}"
-			 ref="msgCells">
+			<messagecell v-for="(msg, index) in msgs" :key="msg.ID" :message="msg" ref="msgCells">
+				<view style="height: 2rpx; background-color: #FFFF00;"></view>
 			</messagecell>
 			<view class="lastele" ref="lastEle"></view>
 		</uni-list>
@@ -25,11 +25,36 @@
 				msgs: [],
 				nomoreData: false,
 				nextReqMessageID: undefined,
-				needScrollToBottom: true
+				needScrollToBottom: true,
+				// 上一个最顶部的消息
+				lastTopMsg: undefined
 			}
 		},
 		pageQuery: {},
 		methods: {
+			/**
+			 * 获取组件的信息
+			 */
+			getElementInfo(selecor) {
+				const thisVue = this
+				return new Promise((resolve, reject) => {
+					uni.createSelectorQuery().in(thisVue).select(selecor)
+						.fields({ rect: true }, res => { resolve(res) })
+						.exec()
+				})
+			},
+			/**
+			 * 计算需要滚动的距离
+			 */
+			scrollToBottomValue() {
+				return Promise.all([this.getElementInfo('.list'), this.getElementInfo('.lastele')])
+					.then(values => {
+						console.log('获取到的数据jisusan ：', values)
+						const scrollY = values[1].top - values[0].top
+						console.log('需要滚动的距离为：', scrollY)
+						return scrollY
+					})
+			},
 			async sendMsg(params) {
 				const { to, type } = this.$options.pageQuery
 				const isBulletMsg = params[0]
@@ -65,9 +90,10 @@
 					const response = await tim.getMessageList(params);
 					console.log('消息列表response：', response)
 					this.nextReqMessageID = response.data.nextReqMessageID
+					this.lastTopMsg = underscore.last(this.msgs)
 					const messages = response.data.messageList
 					this.nomoreData = messages.length < 15
-					this.msgs = [...messages, ...this.msgs]
+					this.msgs.splice(0, 0, ...messages)
 				} catch (e) {
 					console.log('获取消息列表失败：', e)
 				} finally {
@@ -89,6 +115,12 @@
 				const message = event.data[0]
 				this.msgs.push(message)
 			},
+			async scrollToBottom() {
+				if (!this.needScrollToBottom) { return }
+				const bottom = await this.scrollToBottomValue()
+				uni.pageScrollTo({ scrollTop: bottom, duration: 200 })
+				this.needScrollToBottom = false
+			},
 		},
 		onNavigationBarButtonTap(button) {
 			console.log('点击了: ', button)
@@ -107,25 +139,32 @@
 			this.fetchMessageList()
 		},
 		updated() {
-			if (this.needScrollToBottom) {
-				// #ifndef APP-PLUS
-				uni.pageScrollTo({ scrollTop: 10000000, duration: 200 })
-				this.needScrollToBottom = false
-				return
-				// #endif
-				// TODO: 计算总是出错？？？
-				const lastCell = underscore.last(this.$refs.msgCells)
-				console.log("页面刷新完毕：", lastCell)
-				if (lastCell) {
-					const thisVue = this
-					uni.createSelectorQuery().in(this).select('.lastele')
-						.boundingClientRect(data => {
-							console.log('获取到的尺寸是：', data.bottom)
-							uni.pageScrollTo({ scrollTop: data.bottom, duration: 200 })
-							thisVue.needScrollToBottom = false
-						}).exec()
-				}
-			}
+			this.scrollToBottom()
+			// if (this.needScrollToBottom) {
+			// 	// #ifndef APP-PLUS
+			// 	uni.pageScrollTo({ scrollTop: 10000000, duration: 200 })
+			// 	this.needScrollToBottom = false
+			// 	return
+			// 	// #endif
+			// 	// TODO: 计算总是出错？？？
+			// 	const lastCell = underscore.last(this.$refs.msgCells)
+			// 	console.log("页面刷新完毕：", lastCell)
+			// 	if (lastCell) {
+			// 		const thisVue = this
+			// 		uni.createSelectorQuery().in(this).fields({ height: true, bottom: true }, res => {
+			// 			console.log('获取到的list信息为：', JSON.stringify(res))
+			// 			const { bottom, height } = res
+			// 			uni.pageScrollTo({ scrollTop: bottom, duration: 200 })
+			// 			thisVue.needScrollToBottom = false
+			// 		}).select('.list').exec()
+			// 		uni.createSelectorQuery().in(this).fields({ height: true, bottom: true }, res => {
+			// 			console.log('获取到的lastcell信息为：', JSON.stringify(res))
+			// 			const { bottom, height } = res
+			// 			uni.pageScrollTo({ scrollTop: bottom, duration: 200 })
+			// 			thisVue.needScrollToBottom = false
+			// 		}).select('.lastele').exec()
+			// 	}
+			// }
 		},
 
 		onResize(size) {
@@ -142,28 +181,23 @@
 	.container {
 		display: flex;
 		flex-direction: column;
+		background-color: #0095DD;
 	}
 
 	.list {
+		display: flex;
 		flex: 1;
 		padding-bottom: 60px;
-	}
-
-	.lastcell {
-		background-color: #0095DD;
+		background-color: #FF0000;
 	}
 
 	.lastele {
 		height: 1px;
 	}
 
-	#lastele {
-		height: 1px;
-	}
-
 	.messageinput {
 		display: flex;
-		width: 750rpx;
+		width: 100%;
 		position: fixed;
 		bottom: 0px;
 	}

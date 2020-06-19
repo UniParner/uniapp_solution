@@ -109,7 +109,7 @@
 			"style": {}
 		}, {
 			"path": "pages/tencentim/imconversationlist",
-			
+
 			"style": {
 				"navigationBarTitleText": "对话列表",
 				"app-plus": {
@@ -123,12 +123,33 @@
 					}
 				}
 			}
+		}, {
+			"path": "pages/vuexdemo/vuexdemo",
+			"style": {}
+		}, {
+			"path": "pages/dealkeyboard/dealkeyboard",
+			"style": {
+				// "app-plus": {
+				// 	"softinputMode": "adjustResize",
+				// 	"subNVues": [{
+				// 		"id": "statusbar",
+				// 		"path": "components/navibar",
+				// 		"style": {
+				// 			"height": "0rpx"
+				// 		}
+				// 	}]
+				// }
+				"app-plus": {
+					"softinputMode": "adjustResize",
+					"subNVues": [{
+						"id": "richtextmenu",
+						"path": "pages/dealkeyboard/richtextmenu",
+						"style": { "height": "50px", "bottom":"0px"}
+					}]
+				}
+			}
 		}
-	    ,{
-            "path" : "pages/vuexdemo/vuexdemo",
-            "style" : {}
-        }
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

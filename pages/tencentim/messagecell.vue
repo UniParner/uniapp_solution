@@ -1,5 +1,5 @@
 <template>
-	<view class="cell">
+	<view class="cell" >
 		<image src="../../static/logo.png" class="avatar"></image>
 		<text class="text">{{message.payload.text}}</text>
 	</view>
@@ -15,25 +15,24 @@
 	.cell {
 		flex-direction: row;
 		display: flex;
-		margin-left: 30rpx;
-		margin-top: 30rpx;
-		margin-right: 100rpx;
+		margin-left: 15px !important;
+		margin-top: 15px !important;
+		margin-right: 80px !important;
 		align-content: flex-start;
 	}
 	
 	.avatar {
-		width: 44rpx;
-		height: 44rpx;
-		margin-top: 10rpx;
+		width: 40px;
+		height: 40px;
 	}
 
 	.text {
 		flex: 1;
-		padding: 10rpx;
+		padding: 10px;
 		background-color: #8A6DE9;
-		line-height: 44rpx;
+		line-height: 22px;
 		border-radius: 8px;
-		margin-left: 8rpx;
+		margin-left: 8px;
 		font-size: 15px;
 		color: #333333;
 	}

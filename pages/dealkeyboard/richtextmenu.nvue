@@ -1,0 +1,27 @@
+<template>
+	<view class="bar">
+		<button @click="onClickMenu(0)">项目二</button>
+		<button @click="onClickMenu(1)">项目三</button>
+		<button @click="onClickMenu(2)">项目四</button>
+	</view>
+</template>
+
+<script>
+	export default {
+		props: ['onClick'],
+		methods: {
+			onClickMenu(index) {
+				uni.$emit("richtext",  index )
+			}
+		}
+	}
+</script>
+
+<style>
+	.bar {
+		display: flex;
+		flex-direction: row;
+		height: 200px;
+		background-color: #09BB07;
+	}
+</style>
