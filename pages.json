@@ -144,12 +144,39 @@
 					"subNVues": [{
 						"id": "richtextmenu",
 						"path": "pages/dealkeyboard/richtextmenu",
-						"style": { "height": "50px", "bottom":"0px"}
+						"style": { "height": "50px", "bottom": "0px" }
+					}]
+				}
+			}
+		}, {
+			"path": "pages/floatbutton/floatbutton",
+			"style": {
+				"app-plus": {
+					"subNVues": [{
+						"id": "floatbtn",
+						"path": "./pages/floatbutton/floatbtn",
+						"style": { "height": "50px", "width":"50px"}
 					}]
 				}
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/animationdemo/animationdemo",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/customscrollview/customscrollview",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/scrollviewdemo/scrollviewdemo",
+            "style" : {}
+        }
+        ,{
+            "path" : "components/swiperdemo/swiperdemo",
+            "style" : {}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

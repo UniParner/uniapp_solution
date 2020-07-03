@@ -47,7 +47,8 @@
 			 * 计算需要滚动的距离
 			 */
 			scrollToBottomValue() {
-				return Promise.all([this.getElementInfo('.list'), this.getElementInfo('.lastele')])
+				return Promise.all([this.getElementInfo('.list'), this.getElementInfo(
+						'.lastele')])
 					.then(values => {
 						console.log('获取到的数据jisusan ：', values)
 						const scrollY = values[1].top - values[0].top

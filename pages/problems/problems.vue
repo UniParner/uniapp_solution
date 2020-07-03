@@ -18,6 +18,8 @@ export default {
 	data() {
 		return {
 			problems: [
+        { title: 'Swiper Demo', path: '../../components/swiperdemo/swiperdemo' },
+        { title: 'ScrollView Demo', path: '../scrollviewdemo/scrollviewdemo' },
 				{ title: '长列表', path: '../longlist/longlist' },
 				{ title: '渐变', path: '../lineargradient/lineargradient' },
 				{ title: '文章', path: '../listview/listview' },
@@ -30,9 +32,12 @@ export default {
 				{title: 'UniApp支付', path: '../payment/payment'},
 				{title: 'Vuex示例，Counter', path: '../vuexdemo/vuexdemo'},
 				{title: '键盘处理', path: '../dealkeyboard/dealkeyboard'},
+				{title: '悬浮按钮', path: '../floatbutton/floatbtn'},
+        {title: '改造系统ScollView', path: '../customscrollview/customscrollview'},
 			]
 		};
 	},
+	
 	methods: {
 		navToProblem: function(problem) {
 			uni.navigateTo({
