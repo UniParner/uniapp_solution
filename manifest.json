@@ -1,6 +1,6 @@
 {
     "name" : "行动派圈子",
-    "appid" : "__UNI__BC835A0",
+    "appid" : "__UNI__2CF252B",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : 1,
@@ -100,5 +100,8 @@
     },
     "uniStatistics" : {
         "enable" : false
+    },
+    "h5" : {
+        "template" : "public/index.html"
     }
 }

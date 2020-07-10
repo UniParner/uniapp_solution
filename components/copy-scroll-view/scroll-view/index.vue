@@ -1,5 +1,5 @@
 <template>
-  <uni-scroll-view v-on="$listeners">
+  <uni-scroll-view>
     <div
          ref="wrap"
          class="uni-scroll-view">

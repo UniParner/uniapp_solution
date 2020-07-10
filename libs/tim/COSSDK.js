@@ -1,4 +1,4 @@
-// #ifdef APP-PLUS
+// #ifndef H5
 import COS from "cos-wx-sdk-v5";
 // #endif
 

@@ -1,8 +1,8 @@
-// #ifdef APP-PLUS
+// #ifdef H5
 import TIM from 'tim-wx-sdk';
 // #endif
 
-// #ifdef H5
+// #ifndef H5
 import TIM from 'tim-wx-sdk';
 // #endif
 

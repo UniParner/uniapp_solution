@@ -65,10 +65,16 @@
 </script>
 
 <style>
+  
+  body, html {
+    overscroll-behavior: none;
+  }
+  
   .container {
     display: flex;
     flex-direction: column;
     background-color: #000066;
+    overscroll-behavior: none;
   }
 
   .header {

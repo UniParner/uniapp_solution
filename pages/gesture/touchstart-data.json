@@ -1,0 +1,270 @@
+{
+    "type": "touchstart",
+    "timeStamp": 1260,
+    "target": {
+        "id": "",
+        "offsetLeft": 50,
+        "offsetTop": 50,
+        "dataset": {
+            "eventOpts": [
+                [
+                    "touchstart",
+                    [
+                        [
+                            "onTouchStart",
+                            [
+                                "$event"
+                            ]
+                        ]
+                    ]
+                ],
+                [
+                    "touchmove",
+                    [
+                        [
+                            "onTouchMove",
+                            [
+                                "$event"
+                            ]
+                        ]
+                    ]
+                ],
+                [
+                    "touchend",
+                    [
+                        [
+                            "onTouchEnd",
+                            [
+                                "$event"
+                            ]
+                        ]
+                    ]
+                ],
+                [
+                    "touchcancel",
+                    [
+                        [
+                            "onTouchEnd",
+                            [
+                                "$event"
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        }
+    },
+    "currentTarget": {
+        "id": "",
+        "offsetLeft": 50,
+        "offsetTop": 50,
+        "dataset": {
+            "eventOpts": [
+                [
+                    "touchstart",
+                    [
+                        [
+                            "onTouchStart",
+                            [
+                                "$event"
+                            ]
+                        ]
+                    ]
+                ],
+                [
+                    "touchmove",
+                    [
+                        [
+                            "onTouchMove",
+                            [
+                                "$event"
+                            ]
+                        ]
+                    ]
+                ],
+                [
+                    "touchend",
+                    [
+                        [
+                            "onTouchEnd",
+                            [
+                                "$event"
+                            ]
+                        ]
+                    ]
+                ],
+                [
+                    "touchcancel",
+                    [
+                        [
+                            "onTouchEnd",
+                            [
+                                "$event"
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        }
+    },
+    "mark": {},
+    "detail": {},
+    "touches": [
+        {
+            "identifier": 0,
+            "pageX": 143,
+            "pageY": 136,
+            "clientX": 143,
+            "clientY": 136,
+            "force": 1
+        }
+    ],
+    "changedTouches": [
+        {
+            "identifier": 0,
+            "pageX": 143,
+            "pageY": 136,
+            "clientX": 143,
+            "clientY": 136,
+            "force": 1
+        }
+    ],
+    "mut": false,
+    "_requireActive": false,
+    "_userTap": false,
+    "mp": {
+        "type": "touchstart",
+        "timeStamp": 1260,
+        "target": {
+            "id": "",
+            "offsetLeft": 50,
+            "offsetTop": 50,
+            "dataset": {
+                "eventOpts": [
+                    [
+                        "touchstart",
+                        [
+                            [
+                                "onTouchStart",
+                                [
+                                    "$event"
+                                ]
+                            ]
+                        ]
+                    ],
+                    [
+                        "touchmove",
+                        [
+                            [
+                                "onTouchMove",
+                                [
+                                    "$event"
+                                ]
+                            ]
+                        ]
+                    ],
+                    [
+                        "touchend",
+                        [
+                            [
+                                "onTouchEnd",
+                                [
+                                    "$event"
+                                ]
+                            ]
+                        ]
+                    ],
+                    [
+                        "touchcancel",
+                        [
+                            [
+                                "onTouchEnd",
+                                [
+                                    "$event"
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        "currentTarget": {
+            "id": "",
+            "offsetLeft": 50,
+            "offsetTop": 50,
+            "dataset": {
+                "eventOpts": [
+                    [
+                        "touchstart",
+                        [
+                            [
+                                "onTouchStart",
+                                [
+                                    "$event"
+                                ]
+                            ]
+                        ]
+                    ],
+                    [
+                        "touchmove",
+                        [
+                            [
+                                "onTouchMove",
+                                [
+                                    "$event"
+                                ]
+                            ]
+                        ]
+                    ],
+                    [
+                        "touchend",
+                        [
+                            [
+                                "onTouchEnd",
+                                [
+                                    "$event"
+                                ]
+                            ]
+                        ]
+                    ],
+                    [
+                        "touchcancel",
+                        [
+                            [
+                                "onTouchEnd",
+                                [
+                                    "$event"
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        },
+        "mark": {},
+        "detail": {},
+        "touches": [
+            {
+                "identifier": 0,
+                "pageX": 143,
+                "pageY": 136,
+                "clientX": 143,
+                "clientY": 136,
+                "force": 1
+            }
+        ],
+        "changedTouches": [
+            {
+                "identifier": 0,
+                "pageX": 143,
+                "pageY": 136,
+                "clientX": 143,
+                "clientY": 136,
+                "force": 1
+            }
+        ],
+        "mut": false,
+        "_requireActive": false,
+        "_userTap": false
+    }
+}

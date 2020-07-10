@@ -16,10 +16,22 @@ cos-wx-sdk-v5@^0.7.10:
   dependencies:
     xmldom "^0.1.27"
 
+dom7@^3.0.0-alpha.5:
+  version "3.0.0-alpha.5"
+  resolved "https://registry.npmjs.org/dom7/-/dom7-3.0.0-alpha.5.tgz#9db8d5f0b28248c3fa07651306ce8dd08ad6d623"
+  integrity sha512-8qnd76DAkn12DSOPCu5EtGiWwMDsagt1lb8zC50UfZ1sfLHixM510RXiQc4DTQsEAi/i3BjD3es7awqUCB+IjQ==
+  dependencies:
+    ssr-window "^3.0.0-alpha.1"
+
 es6-promise@^4.2.8:
   version "4.2.8"
   resolved "https://registry.npmjs.org/es6-promise/-/es6-promise-4.2.8.tgz#4eb21594c972bc40553d276e510539143db53e0a"
   integrity sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w==
+
+hammerjs@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.npmjs.org/hammerjs/-/hammerjs-2.0.8.tgz#04ef77862cff2bb79d30f7692095930222bf60f1"
+  integrity sha1-BO93hiz/K7edMPdpIJWTAiK/YPE=
 
 rxjs-compat@^6.5.5:
   version "6.5.5"
@@ -32,6 +44,19 @@ rxjs@^6.5.5:
   integrity sha512-WfQI+1gohdf0Dai/Bbmk5L5ItH5tYqm3ki2c5GdWhKjalzjg93N3avFjVStyZZz+A2Em+ZxKH5bNghw9UeylGQ==
   dependencies:
     tslib "^1.9.0"
+
+ssr-window@^3.0.0-alpha.1, ssr-window@^3.0.0-alpha.4:
+  version "3.0.0-alpha.4"
+  resolved "https://registry.npmjs.org/ssr-window/-/ssr-window-3.0.0-alpha.4.tgz#0c69a18c4305ecccdd8e11596155ca07b635f345"
+  integrity sha512-+dBRP/pZ+VyITxTzD0lMDzDwN/BmfUl8xi2e6t5Nz4+FqUphfcBLB1OOUSYCRNFB25rD3c8AJRYpY5rHTbL+kg==
+
+swiper@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.npmjs.org/swiper/-/swiper-6.0.1.tgz#6b20fd9b396b8a58d08a790e2d657833ed3f5a6f"
+  integrity sha512-HnqrOPkxtuui4/7zx2XCAA0VUdrEiZobxEHlM1lAmLTmTOgSO1ohAG2qfnHujYkWu04Mc6ZkPwHQWukftA9cbA==
+  dependencies:
+    dom7 "^3.0.0-alpha.5"
+    ssr-window "^3.0.0-alpha.4"
 
 tim-js-sdk@^2.7.0:
   version "2.7.0"

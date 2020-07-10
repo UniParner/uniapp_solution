@@ -1,220 +1,237 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/problems/problems",
-			"style": {
-				"enablePullDownRefresh": true,
-				"titleNView": false
-			}
-		},
-		{
-			"path": "pages/listview/listview",
-			"style": {
-				"enablePullDownRefresh": true
-			}
-		},
-		{
-			"path": "pages/home/index",
-			"style": {
-				"navigationBarTitleText": "home"
-			}
-		},
-		{
-			"path": "pages/me/index",
-			"style": {
-				"navigationBarTitleText": "me"
-			}
-		},
-		{
-			"path": "pages/contacts/index",
-			"style": {
-				"navigationBarTitleText": "联系人"
-			}
-		},
-		{
-			"path": "pages/moments/index",
-			"style": {
-				"navigationBarTitleText": "朋友圈"
-			}
-		},
-		{
-			"path": "pages/goodsdetail/goodsdetail",
-			"style": {
-				"navigationBarTitleText": "产品详情"
-			}
-		},
-		{
-			"path": "pages/nvuetest/nvuetest",
-			"style": {}
-		},
-		{
-			"path": "pages/lineargradient/lineargradient",
-			"style": {}
-		},
-		{
-			"path": "pages/longlist/longlist",
-			"style": {}
-		}, {
-			"path": "pages/nvuetest/customstatusbar/customstatusbar",
-			"style": {
-				"navigationStyle": "custom",
-				"titleNView": false,
-				"app-plus": {
-					"subNVues": [{
-						"id": "statusbar",
-						"path": "components/navibar",
-						"style": {
-							"height": "0rpx"
-						}
-					}]
-				}
-			}
-		}, {
-			"path": "pages/h5editor/h5editor",
-			"style": {}
-		}, {
-			"path": "pages/richtext/richtext",
-			"style": {}
-		}, {
-			"path": "pages/tencentim/tencentim",
-			"style": {}
-		}, {
-			"path": "pages/tencentim/imlogin",
-			"style": {}
-		}, {
-			"path": "pages/tencentim/imcoversation",
-			"style": {
-				"enablePullDownRefresh": true,
-				"navigationBarTitleText": "IM对话"
-				// ,
-				// "app-plus": {
-				// 	"titleNView": {
-				// 		"padding-right": "6px",
-				// 		"buttons": [{
-				// 			"text": "创建会话",
-				// 			"fontSize": "16px",
-				// 			"width": "auto"
-				// 		}]
-				// 	}
-				// }
-			}
-		}, {
-			"path": "pages/downloadfile/downloadfile",
-			"style": {}
-		}, {
-			"path": "pages/loginshare3party/loginshare3party",
-			"style": {}
-		}, {
-			"path": "pages/payment/payment",
-			"style": {}
-		}, {
-			"path": "pages/tencentim/imconversationlist",
+  "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/problems/problems",
+      "style": {
+        "enablePullDownRefresh": true,
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/listview/listview",
+      "style": {
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationBarTitleText": "home"
+      }
+    },
+    {
+      "path": "pages/me/index",
+      "style": {
+        "navigationBarTitleText": "me"
+      }
+    },
+    {
+      "path": "pages/contacts/index",
+      "style": {
+        "navigationBarTitleText": "联系人"
+      }
+    },
+    {
+      "path": "pages/moments/index",
+      "style": {
+        "navigationBarTitleText": "朋友圈"
+      }
+    },
+    {
+      "path": "pages/goodsdetail/goodsdetail",
+      "style": {
+        "navigationBarTitleText": "产品详情"
+      }
+    },
+    {
+      "path": "pages/nvuetest/nvuetest",
+      "style": {}
+    },
+    {
+      "path": "pages/lineargradient/lineargradient",
+      "style": {}
+    },
+    {
+      "path": "pages/longlist/longlist",
+      "style": {}
+    }, {
+      "path": "pages/nvuetest/customstatusbar/customstatusbar",
+      "style": {
+        "navigationStyle": "custom",
+        "titleNView": false,
+        "app-plus": {
+          "subNVues": [{
+            "id": "statusbar",
+            "path": "components/navibar",
+            "style": {
+              "height": "0rpx"
+            }
+          }]
+        }
+      }
+    }, {
+      "path": "pages/h5editor/h5editor",
+      "style": {}
+    }, {
+      "path": "pages/richtext/richtext",
+      "style": {}
+    }, {
+      "path": "pages/tencentim/tencentim",
+      "style": {}
+    }, {
+      "path": "pages/tencentim/imlogin",
+      "style": {}
+    }, {
+      "path": "pages/tencentim/imcoversation",
+      "style": {
+        "enablePullDownRefresh": true,
+        "navigationBarTitleText": "IM对话"
+        // ,
+        // "app-plus": {
+        // 	"titleNView": {
+        // 		"padding-right": "6px",
+        // 		"buttons": [{
+        // 			"text": "创建会话",
+        // 			"fontSize": "16px",
+        // 			"width": "auto"
+        // 		}]
+        // 	}
+        // }
+      }
+    }, {
+      "path": "pages/downloadfile/downloadfile",
+      "style": {}
+    }, {
+      "path": "pages/loginshare3party/loginshare3party",
+      "style": {}
+    }, {
+      "path": "pages/payment/payment",
+      "style": {}
+    }, {
+      "path": "pages/tencentim/imconversationlist",
 
-			"style": {
-				"navigationBarTitleText": "对话列表",
-				"app-plus": {
-					"titleNView": {
-						"padding-right": "6px",
-						"buttons": [{
-							"text": "创建会话",
-							"fontSize": "16px",
-							"width": "auto"
-						}]
-					}
-				}
-			}
-		}, {
-			"path": "pages/vuexdemo/vuexdemo",
-			"style": {}
-		}, {
-			"path": "pages/dealkeyboard/dealkeyboard",
-			"style": {
-				// "app-plus": {
-				// 	"softinputMode": "adjustResize",
-				// 	"subNVues": [{
-				// 		"id": "statusbar",
-				// 		"path": "components/navibar",
-				// 		"style": {
-				// 			"height": "0rpx"
-				// 		}
-				// 	}]
-				// }
-				"app-plus": {
-					"softinputMode": "adjustResize",
-					"subNVues": [{
-						"id": "richtextmenu",
-						"path": "pages/dealkeyboard/richtextmenu",
-						"style": { "height": "50px", "bottom": "0px" }
-					}]
-				}
-			}
-		}, {
-			"path": "pages/floatbutton/floatbutton",
-			"style": {
-				"app-plus": {
-					"subNVues": [{
-						"id": "floatbtn",
-						"path": "./pages/floatbutton/floatbtn",
-						"style": { "height": "50px", "width":"50px"}
-					}]
-				}
-			}
-		}
-	    ,{
-            "path" : "pages/animationdemo/animationdemo",
+      "style": {
+        "navigationBarTitleText": "对话列表",
+        "app-plus": {
+          "titleNView": {
+            "padding-right": "6px",
+            "buttons": [{
+              "text": "创建会话",
+              "fontSize": "16px",
+              "width": "auto"
+            }]
+          }
+        }
+      }
+    }, {
+      "path": "pages/vuexdemo/vuexdemo",
+      "style": {}
+    }, {
+      "path": "pages/dealkeyboard/dealkeyboard",
+      "style": {
+        // "app-plus": {
+        // 	"softinputMode": "adjustResize",
+        // 	"subNVues": [{
+        // 		"id": "statusbar",
+        // 		"path": "components/navibar",
+        // 		"style": {
+        // 			"height": "0rpx"
+        // 		}
+        // 	}]
+        // }
+        "app-plus": {
+          "softinputMode": "adjustResize",
+          "subNVues": [{
+            "id": "richtextmenu",
+            "path": "pages/dealkeyboard/richtextmenu",
+            "style": { "height": "50px", "bottom": "0px" }
+          }]
+        }
+      }
+    }, {
+      "path": "pages/floatbutton/floatbutton",
+      "style": {
+        "app-plus": {
+          "subNVues": [{
+            "id": "floatbtn",
+            "path": "./pages/floatbutton/floatbtn",
+            "style": { "height": "50px", "width": "50px" }
+          }]
+        }
+      }
+    }, {
+      "path": "pages/animationdemo/animationdemo",
+      "style": {}
+    }, {
+      "path": "pages/customscrollview/customscrollview",
+      "style": {}
+    }, {
+      "path": "pages/scrollviewdemo/scrollviewdemo",
+      "style": {}
+    }, {
+      "path": "components/swiperdemo/swiperdemo",
+      "style": {}
+    }, {
+      "path": "components/swiperdemo/swiperdemo2",
+      "style": {}
+    },
+    {
+      "path": "pages/lessdemo/lessdemo",
+      "style": {}
+    }, {
+      "path": "components/swiperdemo/swipernvue",
+      "style": {}
+    }, {
+      "path": "pages/customscrollview/myscrollview",
+      "style": {}
+    }
+      ,{
+            "path" : "pages/renderjs/renderjs",
             "style" : {}
         }
         ,{
-            "path" : "pages/customscrollview/customscrollview",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/scrollviewdemo/scrollviewdemo",
-            "style" : {}
-        }
-        ,{
-            "path" : "components/swiperdemo/swiperdemo",
+            "path" : "pages/gesture/gesture",
             "style" : {}
         }
     ],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8",
-		"h5": {
-			"titleNView": false
-		}
-	},
-	"condition": { //模式配置，仅开发期间生效
-		"current": 0, //当前激活的模式(list 的索引项)
-		"list": [{
-			"name": "", //模式名称
-			"path": "", //启动页面，必选
-			"query": "" //启动参数，在页面的onLoad函数里面得到
-		}]
-	},
-	"tabBar": {
-		"color": "#7A7E83",
-		"selectedColor": "#3cc51f",
-		"borderStyle": "black",
-		"backgroundColor": "#ffffff",
-		"height": "50px",
-		"fontSize": "10px",
-		"iconWidth": "24px",
-		"spacing": "3px",
-		"list": [{
-			"pagePath": "pages/problems/problems",
-			"text": "微信"
-		}, {
-			"pagePath": "pages/contacts/index",
-			"text": "联系人"
-		}, {
-			"pagePath": "pages/moments/index",
-			"text": "朋友圈"
-		}, {
-			"pagePath": "pages/me/index",
-			"text": "我的"
-		}]
-	}
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "h5": {
+      "titleNView": false
+    }
+  },
+  "condition": { //模式配置，仅开发期间生效
+    "current": 0, //当前激活的模式(list 的索引项)
+    "list": [{
+      "name": "", //模式名称
+      "path": "", //启动页面，必选
+      "query": "" //启动参数，在页面的onLoad函数里面得到
+    }]
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "height": "50px",
+    "fontSize": "10px",
+    "iconWidth": "24px",
+    "spacing": "3px",
+    "list": [{
+      "pagePath": "pages/problems/problems",
+      "text": "微信"
+    }, {
+      "pagePath": "pages/contacts/index",
+      "text": "联系人"
+    }, {
+      "pagePath": "pages/moments/index",
+      "text": "朋友圈"
+    }, {
+      "pagePath": "pages/me/index",
+      "text": "我的"
+    }]
+  }
 }
