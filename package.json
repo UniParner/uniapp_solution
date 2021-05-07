@@ -10,7 +10,7 @@
     "tim-js-sdk": "^2.7.0",
     "tim-wx-sdk": "^2.7.0",
     "tls-sig-api-v2": "^1.0.0",
-    "underscore": "^1.10.2",
+    "underscore": "^1.12.1",
     "vue-html5-editor": "^1.1.1",
     "vuex": "^3.4.0"
   }
