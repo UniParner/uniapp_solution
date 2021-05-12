@@ -6,7 +6,7 @@
     "hammerjs": "^2.0.8",
     "rxjs": "^6.5.5",
     "rxjs-compat": "^6.5.5",
-    "swiper": "^6.0.1",
+    "swiper": "^6.5.1",
     "tim-js-sdk": "^2.7.0",
     "tim-wx-sdk": "^2.7.0",
     "tls-sig-api-v2": "^1.0.0",
